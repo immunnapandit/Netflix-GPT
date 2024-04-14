@@ -2,6 +2,13 @@
 - Create React App
 - Configured TalwindCSS
 - Header
+- Routing of App
+- Login Form 
+- Sign up form 
+- Form validation
+- Useref Hook
+- Firebase setup
+- Deploying our app to production
 
 # Features
 - Login/Sign Up
