@@ -7,6 +7,7 @@ import {onAuthStateChanged } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
+// import photoURL from "./Login";
 
 const Body = () => {
 
@@ -27,8 +28,14 @@ const Body = () => {
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
-              const {uid, email, displayName} = user;
-              dispatch(addUser({uid: uid, email: email, displayName: displayName}))
+              const {uid, email, displayName, photoURL} = user;
+              dispatch(addUser({
+                uid: uid, 
+                email: email, 
+                displayName: displayName,
+                photoURL: photoURL,
+            })
+        );
             } else {
               dispatch(removeUser());
             }
