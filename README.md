@@ -1,4 +1,5 @@
 # Netflix GPT
+
 - Create React App
 - Configured TalwindCSS
 - Header
@@ -10,7 +11,11 @@
 - Firebase setup
 - Deploying our app to production
 - create signup user account
+- Created Redux store with userslice
+
+
 # Features
+
 - Login/Sign Up
     - Sign In / Sign Up Form
     - redirect to Browse Page
