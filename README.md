@@ -12,6 +12,8 @@
 - Deploying our app to production
 - create signup user account
 - Created Redux store with userslice
+- Implemented Sign Out
+- Update Profile
 
 
 # Features
