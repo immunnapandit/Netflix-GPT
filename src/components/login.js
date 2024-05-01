@@ -14,19 +14,14 @@ const Login = () => {
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
     const navigate = useNavigate();
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
+
     const name = useRef(null);
     const email = useRef(null);
     const password = useRef(null);
     
 
     const handleButtonClick = () => {
-      //Validate the form data
-
-      // console.log(email.current.value);
-      // console.log(password.current.value);
-      // console.log(name.current.value);
-
       const message = checkValidData(email.current.value, password.current.value,);
       setErrorMessage(message);
       if(message) return;
